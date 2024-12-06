@@ -26,7 +26,7 @@
     <meta name="twitter:url" content="https://6mir.github.io/6mir">
 
     <meta name="theme-color" content="#991155">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <script type="application/ld+json">
@@ -56,43 +56,44 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const imageBoxes = document.querySelectorAll(".img-box");
-            console.log(imageBoxes)
+
             imageBoxes.forEach((box) => {
                 const img = box.querySelector("img");
 
-                if (!img) return; // اطمینان از اینکه تصویر وجود دارد
+                if (!img) return; // اطمینان از وجود تصویر
 
-                // ایجاد دیو لودینگ
+                // دیو لودینگ مشترک
                 const loadingDiv = document.createElement("div");
-                loadingDiv.className = "h-full flex items-center justify-center bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700";
+                loadingDiv.className =
+                    "h-full flex items-center justify-center bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700";
                 loadingDiv.innerHTML = `
             <svg class="w-10 h-10 text-gray-200 dark:text-gray-600">
                 <use href="#img-loding"></use>
             </svg>
             <span class="sr-only">Loading...</span>
-        `;
+            `;
                 box.appendChild(loadingDiv);
-                img.classList.add("hidden"); // مخفی کردن تصویر
 
-                // بررسی اینکه آیا تصویر کش‌شده است یا نه
+                img.classList.add("hidden"); // مخفی کردن تصویر تا لود شدن کامل
+
+                // رویدادهای لود یا خطا
+                const onLoadOrError = () => {
+                    img.classList.remove("hidden"); // نمایش تصویر
+                    loadingDiv.remove(); // حذف لودینگ
+                };
+
                 if (img.complete) {
-                    img.classList.remove("hidden");
-                    loadingDiv.remove();
+                    onLoadOrError(); // اگر قبلاً تصویر لود شده
                 } else {
-                    img.onload = () => {
-                        img.classList.remove("hidden"); // نمایش تصویر
-                        loadingDiv.remove(); // حذف لودینگ
-                    };
-
+                    img.onload = onLoadOrError; // رویداد لود
                     img.onerror = () => {
-                        img.src = "./src/picture/error/img.png";
-                        img.classList.add("rounded-md"); // مسیر تصویر پیش‌فرض;
-                        loadingDiv.remove(); // حذف لودینگ
+                        img.src = "./src/picture/error/img.png"; // جایگزینی با تصویر پیش‌فرض
+                        img.classList.add("rounded-md");
+                        onLoadOrError();
                     };
                 }
             });
         });
-
     </script>
 </head>
 

@@ -20,72 +20,20 @@
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>پروژه‌ها</title>
-  <!-- لینک به فایل‌های استایل مانند Tailwind CSS یا CSS خود -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
 
-    /* Style for each project card */
-    .project-card {
-      background: #f5f5f5;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 220px;
-      text-decoration: none;
-      color: #333;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+# پروژه‌های من
 
-    /* Title of the project */
-    .project-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+## پروژه 1
+[لینک به پروژه 1](https://github.com/username/project1)
 
-    /* Description of the project */
-    .project-description {
-      font-size: 14px;
-    }
+- توضیح پروژه 1
+- استفاده از HTML و CSS
 
-    /* Hover effects */
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-    }
-  </style>
-</head>
-<body>
-  <div class="projects">
-    <a href="https://github.com/john-doe/project1" target="_blank" class="project-card">
-      <h3 class="project-title">پروژه 1</h3>
-      <p class="project-description">توضیحی کوتاه از پروژه 1</p>
-    </a>
-    
-    <a href="https://github.com/john-doe/project2" target="_blank" class="project-card">
-      <h3 class="project-title">پروژه 2</h3>
-      <p class="project-description">توضیحی کوتاه از پروژه 2</p>
-    </a>
-  </div>
-</body>
-</html>
+## پروژه 2
+[لینک به پروژه 2](https://github.com/username/project2)
 
+- توضیح پروژه 2
+- استفاده از React و Node.js
 
 ## آمار من 📊
 ![John's GitHub stats](https://github-readme-stats.vercel.app/api?username=john-doe&show_icons=true&count_private=true&hide=prs&theme=radical)

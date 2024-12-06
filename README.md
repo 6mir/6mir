@@ -24,16 +24,16 @@
 # پروژه‌های من
 
 ## پروژه 1
-[لینک به پروژه 1](https://6mir.github.io/6mir))
+[لینک به پروژه 1](https://6mir.github.io/6mir)
 
 - توضیح پروژه 1
-- استفاده از HTML و CSS
+- استفاده از HTML و CSS و Tailwind و JavaScript
 
 ## پروژه 2
-[لینک به پروژه 2](https://6mir.github.io/audio))
+[لینک به پروژه 2](https://6mir.github.io/audio)
 
 - توضیح پروژه 2
-- استفاده از React و Node.js
+- استفاده از HTML و CSS و JavaScript
 
 ## آمار من 📊
 ![John's GitHub stats](https://github-readme-stats.vercel.app/api?username=john-doe&show_icons=true&count_private=true&hide=prs&theme=radical)

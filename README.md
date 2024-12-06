@@ -12,7 +12,7 @@
 
 ## پروژه‌ها 🚀
 - [پروژه 1](https://6mir.github.io/6mir)
-- [پروژه 2](https://6mir.github.io/6mir)
+- [پروژه 2](https://6mir.github.io/audio)
 
 ## آمار من 📊
 ![John's GitHub stats](https://github-readme-stats.vercel.app/api?username=john-doe&show_icons=true&count_private=true&hide=prs&theme=radical)

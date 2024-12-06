@@ -16,3 +16,13 @@
 
 ## آمار من 📊
 ![John's GitHub stats](https://github-readme-stats.vercel.app/api?username=john-doe&show_icons=true&count_private=true&hide=prs&theme=radical)
+
+![John's GitHub stats](https://github-readme-stats.vercel.app/api?username=john-doe&show_icons=true&count_private=true&hide=prs&theme=radical)
+
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+
+## ارتباط با من 📧
+- [LinkedIn](https://www.linkedin.com/in/john-doe/)
+- [Twitter](https://twitter.com/john_doe)
+- [Instagram](https://instagram.com/john_doe)

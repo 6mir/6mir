@@ -20,19 +20,71 @@
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
-## پروژه‌ها 🚀
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پروژه‌ها</title>
+  <!-- لینک به فایل‌های استایل مانند Tailwind CSS یا CSS خود -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <a href="https://github.com/john-doe/project1" target="_blank" style="background: #f5f5f5; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 200px; text-decoration: none; color: #333; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 10px;">پروژه 1</h3>
-    <p style="font-size: 14px; text-align: center;">توضیحی کوتاه از پروژه 1</p>
-  </a>
-  
-  <a href="https://github.com/john-doe/project2" target="_blank" style="background: #f5f5f5; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 200px; text-decoration: none; color: #333; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-    <h3 style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 10px;">پروژه 2</h3>
-    <p style="font-size: 14px; text-align: center;">توضیحی کوتاه از پروژه 2</p>
-  </a>
-</div>
+    /* Style for each project card */
+    .project-card {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 220px;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Title of the project */
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Description of the project */
+    .project-description {
+      font-size: 14px;
+    }
+
+    /* Hover effects */
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="projects">
+    <a href="https://github.com/john-doe/project1" target="_blank" class="project-card">
+      <h3 class="project-title">پروژه 1</h3>
+      <p class="project-description">توضیحی کوتاه از پروژه 1</p>
+    </a>
+    
+    <a href="https://github.com/john-doe/project2" target="_blank" class="project-card">
+      <h3 class="project-title">پروژه 2</h3>
+      <p class="project-description">توضیحی کوتاه از پروژه 2</p>
+    </a>
+  </div>
+</body>
+</html>
 
 
 ## آمار من 📊

@@ -24,13 +24,13 @@
 # پروژه‌های من
 
 ## پروژه 1
-[لینک به پروژه 1](https://github.com/username/project1)
+[لینک به پروژه 1](https://6mir.github.io/6mir))
 
 - توضیح پروژه 1
 - استفاده از HTML و CSS
 
 ## پروژه 2
-[لینک به پروژه 2](https://github.com/username/project2)
+[لینک به پروژه 2](https://6mir.github.io/audio))
 
 - توضیح پروژه 2
 - استفاده از React و Node.js

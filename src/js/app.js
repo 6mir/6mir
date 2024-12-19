@@ -433,3 +433,8 @@ window.addEventListener("DOMContentLoaded", () => {
 // اضافه کردن لیسنر برای رویدادهای آنلاین و آفلاین
 window.addEventListener("online", () => toggleMessage(true));
 window.addEventListener("offline", () => toggleMessage(false));
+
+// در صورتی که آفلاین شویم و صفحه رفرش شود، مطمئن شویم که پیغام آفلاین نمایش داده شود.
+if (!navigator.onLine) {
+  toggleMessage(false);  // پیام آفلاین را نمایش می‌دهیم
+}

@@ -1,0 +1,83 @@
+{
+  "socialLinks": {
+    "phone": "+09151234567",
+    "email": "me@gmail.com",
+    "telegram": "https://t.me/#",
+    "instagram": "https://instagram.com/#",
+    "github": "https://github.com/6mir"
+  },
+  "cards": [
+    {
+      "category": "shop",
+      "languages": ["HTML5", "CSS3"],
+      "image": "./src/picture/image/img-1.png",
+      "websiteUrl": "https://www.bing.com",
+      "qrCodeImage": "./src/picture/qr/1-img.png",
+      "title": "وب‌سایت فروشگاهی با طراحی چندصفحه‌ای جذاب و کاربرپسند.",
+      "date": "۱۴۰۲/۰۹/۲۳"
+    },
+    {
+      "category": "shop",
+      "languages": ["HTML5", "CSS3", "JavaScript (ES6+)"],
+      "image": "./src/picture/image/img-2.png",
+      "websiteUrl": "https://6mir.github.io/6mir",
+      "qrCodeImage": "./src/picture/qr/1-img.png",
+      "title": "وب‌سایت فروشگاهی با قابلیت فیلتر محصولات و تجربه کاربری عالی.",
+      "date": "۱۴۰۲/۱۰/۰۵"
+    },
+    {
+      "category": "music",
+      "languages": ["HTML5", "CSS3", "TailwindCSS"],
+      "image": "./src/picture/image/img-3.png",
+      "websiteUrl": "https://www.google.com",
+      "qrCodeImage": "./src/picture/qr/1-img.png",
+      "title": "وب‌سایت موسیقی با پخش‌کننده‌ای پیشرفته و مدرن.",
+      "date": "۱۴۰۲/۱۱/۱۵"
+    },
+    {
+      "category": "music",
+      "languages": ["HTML5", "CSS3", "JavaScript", "TailwindCSS"],
+      "image": "./src/picture/image/img-4.png",
+      "websiteUrl": "https://www.duckduckgo.com",
+      "qrCodeImage": "./src/picture/qr/1-img.png",
+      "title": "سایت موسیقی با پخش‌کننده‌ای منحصر به فرد و طراحی دلنشین.",
+      "date": "۱۴۰۲/۱۲/۰۲"
+    },
+    {
+      "category": "personal",
+      "languages": ["HTML5", "CSS3", "Bootstrap 5"],
+      "image": "./src/picture/image/img-5.png",
+      "websiteUrl": "https://www.w3schools.com",
+      "qrCodeImage": "./src/picture/qr/1-img.png",
+      "title": "وب‌سایت شخصی برای نویسنده‌ای با آثار برجسته و سبک منحصر به فرد.",
+      "date": "۱۴۰۳/۰۱/۲۰"
+    },
+    {
+      "category": "personal",
+      "languages": ["HTML5", "CSS3", "PHP (MySQL)"],
+      "image": "./src/picture/image/img-6.png",
+      "websiteUrl": "https://developer.mozilla.org",
+      "qrCodeImage": "./src/picture/qr/1-img.png",
+      "title": "سایت شخصی با طراحی زیبا و امکانات کاربردی برای کاربران حرفه‌ای.",
+      "date": "۱۴۰۳/۰۳/۰۳"
+    },
+    {
+      "category": "corporate",
+      "languages": ["HTML5", "CSS3"],
+      "image": "./src/picture/image/img-7.jpg",
+      "websiteUrl": "https://stackoverflow.com",
+      "qrCodeImage": "./src/picture/qr/1-img.png",
+      "title": "سایت شرکتی با قابلیت جستجوی هوشمند و دسته‌بندی‌های متنوع برای فیلتر کردن وظایف.",
+      "date": "۱۴۰۳/۰۵/۱۰"
+    },
+    {
+      "category": "corporate",
+      "languages": ["HTML5", "CSS3", "TailwindCSS"],
+      "image": "./src/picture/image/__Error__",
+      "websiteUrl": "https://unsplash.com",
+      "qrCodeImage": "./src/picture/__Error_8_",
+      "title": "وب‌سایت شرکتی با طراحی مدرن.",
+      "date": "۱۴۰۳/۰۶/۲۲"
+    }
+  ]
+}

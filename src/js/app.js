@@ -397,7 +397,7 @@ fetch("./src/js/data.json")
 
 
   // internet
- // گرفتن المان‌ها برای استفاده مجدد
+// گرفتن المان‌ها برای استفاده مجدد
 const noElement = document.getElementById("no");
 const yesElement = document.getElementById("yes");
 
@@ -425,7 +425,10 @@ function toggleMessage(isOnline) {
 }
 
 // هنگام بارگذاری صفحه یا رفرش صفحه
-window.addEventListener("DOMContentLoaded", () => toggleMessage(navigator.onLine));
+window.addEventListener("DOMContentLoaded", () => {
+  const isOnline = navigator.onLine;
+  toggleMessage(isOnline);
+});
 
 // اضافه کردن لیسنر برای رویدادهای آنلاین و آفلاین
 window.addEventListener("online", () => toggleMessage(true));

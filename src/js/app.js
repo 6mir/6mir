@@ -397,44 +397,46 @@ fetch("./src/js/data.json")
 
 
   // internet
+// internet
 // گرفتن المان‌ها برای استفاده مجدد
 const noElement = document.getElementById("no");
 const yesElement = document.getElementById("yes");
 
-// وضعیت قبلی (آفلاین یا آنلاین) را ذخیره می‌کنیم
-let wasOffline = localStorage.getItem("wasOffline") === "true"; // از localStorage وضعیت قبلی را می‌گیریم
-
-// مخفی کردن یا نشان دادن پیام‌ها
-function toggleMessage(isOnline) {
-  if (isOnline) {
-    if (wasOffline) {
-      // اگر قبلاً آفلاین بود، پیام آنلاین را نشان می‌دهیم و بعد از 2 ثانیه مخفی می‌کنیم
-      yesElement.classList.remove("hidden");
-      setTimeout(() => yesElement.classList.add("hidden"), 2000); // مخفی کردن پیام آنلاین بعد از 2 ثانیه
-      wasOffline = false; // اکنون دیگر آفلاین نیستیم
-      localStorage.setItem("wasOffline", "false"); // ذخیره وضعیت آنلاین در localStorage
-    }
-    noElement.classList.add("hidden"); // پیام آفلاین مخفی می‌شود
-  } else {
-    // اگر آفلاین هستیم، پیام آفلاین نمایش داده می‌شود
-    yesElement.classList.add("hidden");
-    noElement.classList.remove("hidden");
-    wasOffline = true; // وضعیت قبلی آفلاین شده است
-    localStorage.setItem("wasOffline", "true"); // ذخیره وضعیت آفلاین در localStorage
-  }
+// تابع برای مخفی کردن پیام‌ها بعد از 2 ثانیه
+function hideMessageAfterDelay(element) {
+  setTimeout(function () {
+    element.classList.add("hidden");
+  }, 2000); // 2 ثانیه
 }
 
-// هنگام بارگذاری صفحه یا رفرش صفحه
-window.addEventListener("DOMContentLoaded", () => {
-  const isOnline = navigator.onLine;
-  toggleMessage(isOnline);
-});
+// نمایش پیام آنلاین و مخفی کردن پیام آفلاین
+function handleOnline() {
+  noElement.classList.add("hidden");
+  yesElement.classList.remove("hidden");
+  hideMessageAfterDelay(yesElement);
+}
+
+// نمایش پیام آفلاین و مخفی کردن پیام آنلاین
+function handleOffline() {
+  noElement.classList.remove("hidden");
+  yesElement.classList.add("hidden");
+  hideMessageAfterDelay(noElement);
+}
 
 // اضافه کردن لیسنر برای رویدادهای آنلاین و آفلاین
-window.addEventListener("online", () => toggleMessage(true));
-window.addEventListener("offline", () => toggleMessage(false));
+window.addEventListener("online", handleOnline);
+window.addEventListener("offline", handleOffline);
 
-// در صورتی که آفلاین شویم و صفحه رفرش شود، مطمئن شویم که پیغام آفلاین نمایش داده شود.
-if (!navigator.onLine) {
-  toggleMessage(false);  // پیام آفلاین را نمایش می‌دهیم
+// هنگام بارگذاری صفحه یا رفرش صفحه
+window.addEventListener("DOMContentLoaded", function () {
+  updateConnectionStatus();
+});
+
+// تابع برای بروزرسانی وضعیت آنلاین/آفلاین
+function updateConnectionStatus() {
+  if (navigator.onLine) {
+    handleOnline();
+  } else {
+    handleOffline();
+  }
 }

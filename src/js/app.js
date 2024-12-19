@@ -397,12 +397,12 @@ fetch("./src/js/data.json")
 
 
   // internet
-  // گرفتن المان‌ها برای استفاده مجدد
+ // گرفتن المان‌ها برای استفاده مجدد
 const noElement = document.getElementById("no");
 const yesElement = document.getElementById("yes");
 
 // وضعیت قبلی (آفلاین یا آنلاین) را ذخیره می‌کنیم
-let wasOffline = !navigator.onLine;
+let wasOffline = localStorage.getItem("wasOffline") === "true"; // از localStorage وضعیت قبلی را می‌گیریم
 
 // مخفی کردن یا نشان دادن پیام‌ها
 function toggleMessage(isOnline) {
@@ -412,6 +412,7 @@ function toggleMessage(isOnline) {
       yesElement.classList.remove("hidden");
       setTimeout(() => yesElement.classList.add("hidden"), 2000); // مخفی کردن پیام آنلاین بعد از 2 ثانیه
       wasOffline = false; // اکنون دیگر آفلاین نیستیم
+      localStorage.setItem("wasOffline", "false"); // ذخیره وضعیت آنلاین در localStorage
     }
     noElement.classList.add("hidden"); // پیام آفلاین مخفی می‌شود
   } else {
@@ -419,6 +420,7 @@ function toggleMessage(isOnline) {
     yesElement.classList.add("hidden");
     noElement.classList.remove("hidden");
     wasOffline = true; // وضعیت قبلی آفلاین شده است
+    localStorage.setItem("wasOffline", "true"); // ذخیره وضعیت آفلاین در localStorage
   }
 }
 

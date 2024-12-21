@@ -8,6 +8,9 @@ self.addEventListener("install", (event) => {
         "https://github.com/6mir/src/js/app.js",
         "https://github.com/6mir/picture/favicon/img.ico",
         "https://github.com/6mir/picture/image/img-1.png",
+        "https://github.com/6mir/src/aoslibrary/style.css",
+        "https://github.com/6mir/scr/aoslibrary/script.js",
+        
         // لیست سایر فایل‌هایی که می‌خواهید ذخیره شوند
       ]);
     })

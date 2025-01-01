@@ -1,0 +1,99 @@
+{
+  "socialLinks": {
+    "phone": "09151234567",
+    "email": "#@gmail.com",
+    "telegram": "https://t.me/#",
+    "instagram": "https://instagram.com/#",
+    "github": "https://github.com/6mir"
+  },
+  "skills": [
+    { "name": "HTML", "percentage": 75 },
+    { "name": "CSS", "percentage": 80 },
+    { "name": "Tailwind Css", "percentage": 45 },
+    { "name": "JavaScript", "percentage": 65 },
+    { "name": "php", "percentage": 55 },
+    { "name": "MySql", "percentage": 30 }
+  ],
+  "cards": [
+    {
+      "category": "shop",
+      "languages": ["HTML", "CSS"],
+      "image": "./picture/image/img-1.png",
+      "websiteUrl": "https://6mir.github.io/6mir",
+      "qrCodeImage": "./picture/qr/img-1.png",
+      "title": "طراحی فروشگاه دیجیتال مدرن",
+      "description": "فروشگاهی برای خرید آسان با طراحی کاربرپسند. مناسب برای ارائه محصولات متنوع.",
+      "date": "۱۴۰۲/۰۹/۲۳"
+    },
+    {
+      "category": "shop",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "image": "./picture/image/img-2.png",
+      "websiteUrl": "https://www.bing.com",
+      "qrCodeImage": "./picture/qr/img-2.jpg",
+      "title": "فروشگاه آنلاین با جستجوی هوشمند",
+      "description": "فروشگاهی پیشرفته با قابلیت جستجوی سریع و فیلتر دقیق محصولات.",
+      "date": "۱۴۰۲/۱۰/۰۵"
+    },
+    {
+      "category": "music",
+      "languages": ["HTML", "CSS", "TailwindCSS"],
+      "image": "./picture/image/img-3.png",
+      "websiteUrl": "https://www.google.com",
+      "qrCodeImage": "./picture/qr/img-3.jpg",
+      "title": "پلتفرم پخش موسیقی خلاقانه",
+      "description": "دارای پخش‌ کننده موسیقی پیشرفته و طراحی واکنش‌گرا برای تجربه لذت‌بخش پلتفرم پخش موسیقی خلاقانه.",
+      "date": "۱۴۰۲/۱۱/۱۵"
+    },
+    {
+      "category": "music",
+      "languages": ["HTML", "CSS", "Bootstrap"],
+      "image": "./picture/image/img-4.png",
+      "websiteUrl": "https://www.w3schools.com",
+      "qrCodeImage": "./picture/qr/img-4.jpg",
+      "title": "سایت موسیقی اختصاصی",
+      "description": "پلتفرمی برای هنرمندان با امکان معرفی آثار و ارتباط با مخاطبان.",
+      "date": "۱۴۰۳/۰۱/۲۰"
+    },
+    {
+      "category": "personal",
+      "languages": ["HTML", "CSS"],
+      "image": "./picture/image/img-5.png",
+      "websiteUrl": "https://stackoverflow.com",
+      "qrCodeImage": "./picture/qr/img-5.jpg",
+      "title": "سایت شخصی حرفه‌ای",
+      "description": "معرفی رزومه و مهارت‌ها در قالبی جذاب و مدرن. مناسب افراد متخصص.",
+      "date": "۱۴۰۳/۰۵/۱۰"
+    },
+    {
+      "category": "personal",
+      "languages": ["HTML", "CSS", "React"],
+      "image": "./picture/image/img-6.png",
+      "websiteUrl": "https://portfolio.me",
+      "qrCodeImage": "./picture/qr/img-6.jpg",
+      "title": "پورتفولیو شخصی خلاق",
+      "description": "محلی برای نمایش پروژه‌ها و دستاوردهای حرفه‌ای با طراحی مدرن.",
+      "date": "۱۴۰۳/۰۳/۱۵"
+    },
+    {
+      "category": "corporate",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "image": "./picture/image/img-7.jpg",
+      "websiteUrl": "https://education-platform.com",
+      "qrCodeImage": "./picture/qr/img-7.jpg",
+      "title": "پلتفرم آموزش دیجیتال",
+      "description": "سیستمی پیشرفته برای یادگیری آنلاین با ابزارهای تعاملی جذاب.",
+      "date": "۱۴۰۳/۰۴/۰۵"
+    },
+    {
+      "category": "corporate",
+      "languages": ["HTML", "CSS", "PHP"],
+      "image": "./picture/image/img-7.jpg",
+      "websiteUrl": "https://blogsite.com",
+      "qrCodeImage": "./picture/qr/img-7.jpg",
+      "title": "وبلاگ شرکتی حرفه‌ای",
+      "description": "محیطی مناسب برای انتشار اخبار.",
+      "date": "۱۴۰۳/۰۶/۱۰"
+    }
+  ]
+}

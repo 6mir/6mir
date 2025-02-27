@@ -1,0 +1,99 @@
+{
+  "socialLinks": {
+    "phone": "09151234567",
+    "email": "m00h4mm4dweb@gmail.com",
+    "telegram": "https://t.me/developerwebsite",
+    "instagram": "https://instagram.com/pv.6mir",
+    "github": "https://github.com/6mir"
+  },
+  "skills": [
+    { "name": "HTML", "percentage": 99 },
+    { "name": "CSS", "percentage": 99 },
+    { "name": "Tailwind Css", "percentage": 80 },
+    { "name": "JavaScript", "percentage": 70 },
+    { "name": "php", "percentage": 25 },
+    { "name": "MySql", "percentage": 25 }
+  ],
+  "cards": [
+    {
+      "category": "shop",
+      "languages": ["HTML", "CSS"],
+      "image": "./src/picture/project/image/img-1.png",
+      "websiteUrl": "https://6mir.github.io/audio",
+      "qrCodeImage": "./src/picture/project/qr/img-1.png",
+      "title": "طراحی فروشگاه دیجیتال مدرن",
+      "date": "۱۴۰۲/۰۹/۲۳",
+      "code": "101"
+    },
+    {
+      "category": "shop",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "image": "./src/picture/project/image/img-2.png",
+      "websiteUrl": "https://6mir.github.io/test2",
+      "qrCodeImage": "./src/picture/project/qr/img-1.png",
+      "title": "فروشگاه آنلاین با جستجوی هوشمند",
+      "date": "۱۴۰۲/۱۰/۰۵",
+      "code": "102"
+    },
+    {
+      "category": "music",
+      "languages": ["HTML", "CSS", "TailwindCSS"],
+      "image": "./src/picture/project/image/img-3.png",
+      "websiteUrl": "https://6mir.github.io/player",
+      "qrCodeImage": "./src/picture/project/qr/img-3.jpg",
+      "title": "پلتفرم پخش موسیقی خلاقانه",
+      "date": "۱۴۰۲/۱۱/۱۵",
+      "code": "103"
+    },
+    {
+      "category": "music",
+      "languages": ["HTML", "CSS", "Bootstrap"],
+      "image": "./src/picture/project/image/img-4.png",
+      "websiteUrl": "https://6mir.github.io/search",
+      "qrCodeImage": "./src/picture/project/qr/img-4.jpg",
+      "title": "سایت موسیقی اختصاصی",
+      "date": "۱۴۰۳/۰۱/۲۰",
+      "code": "104"
+    },
+    {
+      "category": "personal",
+      "languages": ["HTML", "CSS"],
+      "image": "./src/picture/project/image/img-5.png",
+      "websiteUrl": "https://stackoverflow.com",
+      "qrCodeImage": "./src/picture/project/qr/img-5.jpg",
+      "title": "سایت شخصی حرفه ای",
+      "date": "۱۴۰۳/۰۵/۱۰",
+      "code": "105"
+    },
+    {
+      "category": "personal",
+      "languages": ["HTML", "CSS", "React"],
+      "image": "./src/picture/project/image/img-6.png",
+      "websiteUrl": "https://portfolio.me",
+      "qrCodeImage": "./src/picture/project/qr/img-6.jpg",
+      "title": "پورتفولیو شخصی خلاق",
+      "date": "۱۴۰۳/۰۳/۱۵",
+      "code": "106"
+    },
+    {
+      "category": "corporate",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "image": "./src/picture/project/image/img-7.jpg",
+      "websiteUrl": "https://education-platform.com",
+      "qrCodeImage": "./src/picture/project/qr/img-7.jpg",
+      "title": "پلتفرم آموزش دیجیتال",
+      "date": "۱۴۰۳/۰۴/۰۵",
+      "code": "107"
+    },
+    {
+      "category": "corporate",
+      "languages": ["HTML", "CSS", "PHP"],
+      "image": "./src/picture/project/image/__error__",
+      "websiteUrl": "https://www.google.com",
+      "qrCodeImage": "./src/picture/project/qr/__error__",
+      "title": "وبلاگ شرکتی حرفه‌ای محیطی مناسب برای انتشار اخبار",
+      "date": "۱۴۰۳/۰۶/۱۰",
+      "code": "108"
+    }
+  ]
+}

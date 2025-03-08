@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>صفحه اصلی</title>
+    <title>رزومه آنلاین</title>
     <meta name="theme-color" content="#111827" />
     <link rel="icon" href="./src/picture/favicon.png" type="image/png">
     <meta name="robots" content="index, follow">
+
     <meta name="description" content="#">
     <meta name="keywords" content="#">
     <meta name="author" content="امیر">
@@ -28,27 +29,18 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="./src/library/aos/style.css">
-    <link rel="stylesheet" href="./src/library/swiper/style.css">
     <link rel="stylesheet" href="./src/style/app.css">
 
     <!-- link js -->
     <script src="./src/library/aos/script.js" defer></script>
-    <script src="./src/library/swiper/script.js" defer></script>
-    <script src="./src/js/home.js" defer></script>
     <script src="./src/js/script.js" defer></script>
 </head>
 
 <body
-    class="bg-gray-100 dark:bg-[rgb(14_35_56)] text-gray-900 dark:text-gray-100 font-RegularFt bg-[radial-gradient(#9f9c9c_6%,_transparent_1%)] dark:bg-[radial-gradient(#3a3939_10%,_transparent_1%)] [background-size:11px_11px]">
+    class="bg-gray-100 text-[rgb(14_35_56)] dark:bg-[rgb(14_35_56)] dark:text-gray-100 font-RegularFt bg-[radial-gradient(#9f9c9c_6%,_transparent_1%)] dark:bg-[radial-gradient(#3a3939_10%,_transparent_1%)] [background-size:11px_11px]">
 
     <!-- svg all -->
     <svg class="hidden">
-
-        <symbol id="arrow-left-slider" viewBox="0 0 27 27">
-            <path
-                d="M4.42637 12.5604C4.48813 12.4981 4.71885 12.2345 4.93559 12.0157C6.19989 10.6449 9.50107 8.40347 11.228 7.71751C11.4902 7.60808 12.1532 7.37512 12.5086 7.35864C12.8477 7.35864 13.1716 7.43748 13.4804 7.59279C13.8661 7.81046 14.1738 8.15403 14.3439 8.55878C14.4522 8.83882 14.6224 9.68009 14.6224 9.69539C14.7913 10.6143 14.8834 12.1086 14.8834 13.7606C14.8834 15.3325 14.7913 16.7656 14.6527 17.6999C14.6375 17.7163 14.4674 18.76 14.2821 19.1177C13.943 19.7719 13.28 20.1766 12.5704 20.1766H12.5086C12.046 20.1613 11.0742 19.7554 11.0742 19.7413C9.43931 19.0553 6.21621 16.9221 4.92044 15.5043C4.92044 15.5043 4.55455 15.1396 4.39608 14.9125C4.14904 14.5854 4.02552 14.1806 4.02552 13.7759C4.02552 13.3241 4.16419 12.904 4.42637 12.5604" />
-        </symbol>
-
         <!-- menu -->
         <symbol id="menu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -89,7 +81,7 @@
             <path
                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
         </symbol>
-        <symbol id="email" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <symbol id="email" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
         </symbol>
@@ -113,10 +105,6 @@
             <path d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z">
             </path>
         </symbol>
-        <symbol id="error" fill="none" viewBox="0 0 24 24">
-            <path d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
-        </symbol>
-
         <symbol id="loaderimg" aria-hidden="true" fill="currentColor" viewBox="0 0 20 18">
             <path
                 d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
@@ -149,22 +137,13 @@
         <symbol id="arrow-bottom" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </symbol>
-
-        <symbol id="ertebat" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-                d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
-        </symbol>
-        <symbol id="maharatme" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
+        <symbol id="maharatme" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round"
                 d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
         </symbol>
-
-
         <symbol id="darchastproje" viewBox="0 0 24 24" class="fill-current">
             <path
                 d="M12 22.81C11.31 22.81 10.66 22.46 10.2 21.85L8.7 19.85C8.67 19.81 8.55 19.76 8.5 19.75H8C3.83 19.75 1.25 18.62 1.25 13V8C1.25 3.58 3.58 1.25 8 1.25H16C20.42 1.25 22.75 3.58 22.75 8V13C22.75 17.42 20.42 19.75 16 19.75H15.5C15.42 19.75 15.35 19.79 15.3 19.85L13.8 21.85C13.34 22.46 12.69 22.81 12 22.81ZM8 2.75C4.42 2.75 2.75 4.42 2.75 8V13C2.75 17.52 4.3 18.25 8 18.25H8.5C9.01 18.25 9.59 18.54 9.9 18.95L11.4 20.95C11.75 21.41 12.25 21.41 12.6 20.95L14.1 18.95C14.43 18.51 14.95 18.25 15.5 18.25H16C19.58 18.25 21.25 16.58 21.25 13V8C21.25 4.42 19.58 2.75 16 2.75H8Z">
-            </path>
             </path>
             <path
                 d="M12 12C11.44 12 11 11.55 11 11C11 10.45 11.45 10 12 10C12.55 10 13 10.45 13 11C13 11.55 12.56 12 12 12Z">
@@ -175,7 +154,6 @@
             <path d="M8 12C7.44 12 7 11.55 7 11C7 10.45 7.45 10 8 10C8.55 10 9 10.45 9 11C9 11.55 8.56 12 8 12Z">
             </path>
         </symbol>
-
         <symbol id="nemonecar" viewBox="0 0 24 24" fill="none">
             <path d="M9 6C7.9 6 7 6.9 7 8C7 9.1 7.9 10 9 10C10.1 10 11 9.1 11 8" class="stroke-current"
                 stroke-width="1.5px" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
@@ -208,38 +186,31 @@
                 d="M20.1601 22.79C20.0801 22.79 20.0001 22.78 19.9301 22.77C19.4601 22.71 18.6101 22.39 18.1301 20.96C17.8801 20.21 17.9701 19.46 18.3801 18.89C18.7901 18.32 19.4801 18 20.2701 18C21.2901 18 22.0901 18.39 22.4501 19.08C22.8101 19.77 22.7101 20.65 22.1401 21.5C21.4301 22.57 20.6601 22.79 20.1601 22.79ZM19.5601 20.49C19.7301 21.01 19.9701 21.27 20.1301 21.29C20.2901 21.31 20.5901 21.12 20.9001 20.67C21.1901 20.24 21.2101 19.93 21.1401 19.79C21.0701 19.65 20.7901 19.5 20.2701 19.5C19.9601 19.5 19.7301 19.6 19.6001 19.77C19.4801 19.94 19.4601 20.2 19.5601 20.49Z">
             </path>
         </symbol>
-
-        <symbol id="article" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+        <symbol id="error" fill="none" class="stroke-gray-400 stroke-[1.2]" viewBox="0 0 24 24">
+            <path d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
         </symbol>
-
     </svg>
 
     <!-- load body -->
     <div id="loadbody" class="flex items-center justify-center h-screen cursor-none">
-        <div class="border-4 border-transparent border-b-gray-700 dark:border-b-gray-200
-        p-4 rounded-[50%] rotate-180  animate-[loader_0.9s_0.1s_cubic-bezier(0.17,0.67,0.83,0.67)_infinite_forwards]">
+        <div
+            class="border-4 border-transparent border-b-gray-700 dark:border-b-gray-200 p-4 rounded-[50%] rotate-180  animate-[loader_0.9s_0.1s_cubic-bezier(0.17,0.67,0.83,0.67)_infinite_forwards]">
             <div
                 class="rounded size-4 bg-gray-700 dark:bg-gray-200 animate-[circle_0.5s_0.1s_cubic-bezier(0.17,0.67,0.83,0.67)_infinite_forwards]">
             </div>
         </div>
     </div>
 
-    <!-- body -->
+    <!-- main body -->
     <div id="mainbody" class="hidden">
+        <header
+            class="w-[96%] md:fixed top-0 right-0 left-0 z-50 flex items-center justify-between bg-white dark:bg-[rgba(27,52,77)] shadow-normal dark:shadow-normaldark mx-auto mt-1 px-5 py-2.5 md:py-4 rounded-xl">
 
-        <!-- header desctop(them, github, item nav) and mobile(them, github) -->
-        <header data-aos="zoom-in-down"
-            class="absolute md:fixed z-20 inset-0 bottom-auto flex items-center justify-between w-[96%] md:w-[95%] bg-white/95 dark:bg-[rgba(27,52,77,0.95)] backdrop-blur-sm shadow-normal dark:shadow-normaldark mx-auto mt-1 md:mt-3 px-5 md:px-6 py-2.5 md:py-4 rounded-3xl">
-
-            <div class="flex items-center gap-x-1.5 md:gap-x-2">
+            <!-- link & github -->
+            <div class="flex items-center">
                 <!-- github -->
                 <div class="relative group">
-                    <a target="_blank" rel="noopener noreferrer" aria-label="Visit github"
-                        class="github-link size-9 md:size-14">
-                        <!-- Icon -->
+                    <a target="_blank" rel="noopener noreferrer" class="github-link size-9 md:size-14">
                         <svg class="fill-gray-900 dark:fill-gray-100">
                             <use href="#github"></use>
                         </svg>
@@ -256,84 +227,48 @@
                 </div>
 
                 <!-- link -->
-                <div class="hidden md:block">
-                    <ul class="flex gap-x-4 font-BoldFt text-lg">
-                        <!-- article -->
-                        <li><a href="./article.html" target="_blank" rel="noopener noreferrer">مقاله ها</a>
-                        </li>
+                <ul
+                    class="fixed md:static bottom-2 right-0 left-0 z-50 w-fit gap-x-5 md:gap-x-0 mx-auto rounded-xl border-2 md:border-none border-gray-300/20 dark:border-gray-700/20 bg-gray-100/80 dark:bg-[rgba(27,52,77,0.85)] md:bg-transparent backdrop-blur-sm shadow-normal dark:shadow-normaldark md:shadow-none dark:md:shadow-none items-center justify-center p-1 text-xs font-BoldFt stroke-[1.7px] flex md:justify-normal md:font-BoldFt md:text-lg">
 
-                        <!-- proje -->
-                        <li>
-                            <button onclick="btnproje()" class="cursor-pointer hover:opacity-80 transition">درخواست
-                                پروژه</button>
-                        </li>
+                    <li onclick="window.scrollTo({top: 0});"
+                        class="flex md:hidden flex-col items-center transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
+                        <svg class="size-[26px]">
+                            <use href="#home">
+                        </svg>
+                        <p>خانه</p>
+                    </li>
 
-                        <!-- skills -->
-                        <li>
-                            <button onclick="maharat()" class="hover:opacity-80 transition">مهارت های من</button>
-                        </li>
+                    <li onclick="btnproje()"
+                        class="cursor-pointer flex flex-col items-center transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
+                        <svg class="block md:hidden size-[26px]">
+                            <use href="#darchastproje">
+                        </svg>
+                        <p>درخواست</p>
+                    </li>
 
-                        <!-- nemone peoje -->
-                        <li>
-                            <button onclick="proje()" class="hover:opacity-80 transition">نمونه کار های من</button>
-                        </li>
+                    <li onclick="document.getElementById('mt').scrollIntoView()"
+                        class="cursor-pointer flex flex-col items-center transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
+                        <svg class="block md:hidden size-[26px] stroke-[1.3]">
+                            <use href="#maharatme">
+                        </svg>
+                        <p>مهارت <span class="hidden md:inline">های من</span></p>
+                    </li>
 
-                        <!-- ertebat -->
-                        <li class="group relative">
-                            <span class="flex items-center gap-x-1 cursor-pointer">
-                                <p class=" hover:opacity-80 transition">راه های ارتباطی</p>
-                                <svg
-                                    class="size-4 stroke-2 transform transition-all duration-300 group-hover:rotate-180">
-                                    <use href="#arrow-bottom"></use>
-                                </svg>
-                            </span>
-                            <ul
-                                class="font-RegularFt stroke-[1.8px] hidden group-hover:block absolute right-4 space-y-3 pt-3 pb-2.5 pl-16 pr-2.5 rounded-md bg-white/95 dark:bg-[rgba(27,52,77,0.95)] backdrop-blur-xl shadow-xl dark:shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-500">
-                                <li class="animate-[slideDown_0.5s_ease-out_forwards] delay-100 ">
-                                    <a class="phone-link inline-flex gap-x-1 duration-300 hover:opacity-80 transition">
-                                        <svg class="size-5">
-                                            <use href="#phone"></use>
-                                        </svg>
-                                        <p>تلفن</p>
-                                    </a>
-                                </li>
-                                <li class="animate-[slideDown_0.5s_ease-out_forwards] delay-200 ">
-                                    <a class="email-link inline-flex gap-x-1 duration-300 hover:opacity-80 transition">
-                                        <svg class="size-5">
-                                            <use href="#email"></use>
-                                        </svg>
-                                        <p>ایمیل</p>
-                                    </a>
-                                </li>
-                                <li class="animate-[slideDown_0.5s_ease-out_forwards] delay-400">
-                                    <a target="_blank" rel="noopener noreferrer"
-                                        class="telegram-link inline-flex gap-x-1 duration-300 hover:opacity-80 transition">
-                                        <svg class="size-5 stroke-[1.3px]">
-                                            <use href="#telg"></use>
-                                        </svg>
-                                        <p>تلگرام</p>
-                                    </a>
-                                </li>
-                                <li class="animate-[slideDown_0.5s_ease-out_forwards] delay-300 ">
-                                    <a target="_blank" rel="noopener noreferrer"
-                                        class="instagram-link inline-flex gap-x-1 duration-300 hover:opacity-80 transition">
-                                        <svg class="size-5">
-                                            <use href="#instag"></use>
-                                        </svg>
-                                        <p>اینستاگرام</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                    <li onclick="proje()"
+                        class="cursor-pointer flex flex-col items-center  transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
+                        <svg class="block md:hidden size-[26px]">
+                            <use href="#nemonecar">
+                        </svg>
+                        <p class="line-clamp-1">نمونه کار <span class="hidden md:inline">های من</span></p>
+                    </li>
+                </ul>
             </div>
 
             <!-- Theme Toggle -->
-            <div class="cursor-pointer flex" id="toggle-theme">
+            <div class="cursor-pointer stroke-[1.5px]" id="toggle-theme">
                 <!-- Light Mode-->
                 <div class="relative group">
-                    <div class="inline dark:hidden size-10 md:size-14 stroke-[1.5px] text-yellow-500">
+                    <div class="dark:hidden size-10 md:size-14 text-yellow-500">
                         <svg>
                             <use href="#light-mode"></use>
                         </svg>
@@ -348,9 +283,10 @@
                         </span>
                     </span>
                 </div>
+
                 <!-- Dark Mode-->
                 <div class="relative group">
-                    <div class="hidden dark:block size-9 md:size-14 stroke-[1.5px] text-blue-500">
+                    <div class="hidden dark:block size-9 md:size-14 text-blue-500">
                         <svg>
                             <use href="#dark-mode"></use>
                         </svg>
@@ -368,61 +304,7 @@
             </div>
         </header>
 
-        <!-- menu mobile -->
-        <div
-            class="block md:hidden fixed bottom-1.5 w-11/12 right-0 left-0 z-50 mx-auto rounded-xl border-2 border-gray-300/20 dark:border-gray-700/20 bg-gray-100/90 dark:bg-[rgba(27,52,77,0.95)] backdrop-blur-md shadow-normal dark:shadow-normaldark">
-            <ul class="flex items-center justify-between p-1 text-xs font-BoldFt line-clamp-1 stroke-[1.7px]">
-
-                <li onclick="window.scrollTo({top: 0});"
-                    class="flex flex-col items-center transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
-                    <svg class="size-[26px]">
-                        <use href="#home">
-                    </svg>
-                    <p>خانه</p>
-                </li>
-
-                <li onclick="btnproje()"
-                    class="flex flex-col items-center transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
-                    <svg class="size-[26px]">
-                        <use href="#darchastproje">
-                    </svg>
-                    <p>درخواست</p>
-                </li>
-
-                <li onclick="maharat()"
-                    class="flex flex-col items-center transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
-                    <svg class="size-[26px] stroke-[1.3]">
-                        <use href="#maharatme">
-                    </svg>
-                    <p>مهارت</p>
-                </li>
-
-                <li onclick="proje()"
-                    class="flex flex-col items-center  transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
-                    <svg class="size-[26px]">
-                        <use href="#nemonecar">
-                    </svg>
-                    <p class="line-clamp-1">نمونه کار</p>
-                </li>
-
-                <li
-                    class="transition-colors active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] px-4 py-1 rounded-md">
-                    <a href="./article.html" target="_blank" rel="noopener noreferrer"
-                        class="flex flex-col items-center">
-                        <svg class="size-[26px]">
-                            <use href="#article">
-                        </svg>
-                        <p class="line-clamp-1">مقاله ها</p>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
-        <!-- body -->
-        <main class="mt-20 md:mt-32 mx-1 md:mx-5">
-
-            <a href="./article/article-abc.html" target="_blank">click me</a>
+        <main class="mx-1 md:mx-5 mt-5 md:mt-32 mb-10 md:mb-16">
 
             <!-- about btn-2 bg tob -->
             <div class="flex gap-5 items-end md:flex-row-reverse justify-center lg:justify-between flex-wrap">
@@ -446,7 +328,7 @@
                     <section class="">
                         <!-- title -->
                         <p data-aos="fade-left" data-aos-offset="0"
-                            class="font-TitleFt text-3xl md:text-4xl -tracking-wide mb-1 before:content-normal before:size-3 before:md:size-4 before:bg-orange-400 before:dark:bg-orange-800 before:inline-block before:ml-1 before:rounded-sm">
+                            class="font-TitleFt text-3xl md:text-4xl -tracking-wide mb-1 before:content-normal before:size-3 before:md:size-4 before:bg-blue-400 before:dark:bg-blue-600 before:inline-block before:ml-1 before:rounded-sm">
                             درباره من</p>
                         <!-- txt about -->
                         <div data-aos="zoom-in" data-aos-offset="0"
@@ -474,7 +356,7 @@
                         <!-- btn new-proje -->
                         <div data-aos="fade-left" data-aos-offset="0">
                             <button onclick="btnproje()"
-                                class="px-6 py-3 md:px-11 md:py-4 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-lg shadow-normal dark:shadow-normaldark hover:scale-105 transition transform duration-300 cursor-pointer">
+                                class="px-6 py-3 md:px-11 md:py-4 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-md shadow-normal dark:shadow-normaldark hover:scale-105 transition transform duration-300 cursor-pointer">
                                 درخواست پروژه
                             </button>
                         </div>
@@ -482,7 +364,7 @@
                         <!-- btn view-proje -->
                         <div data-aos="fade-right" data-aos-offset="0">
                             <button onclick="proje()"
-                                class="block px-6 py-3 md:px-11 md:py-4 bg-gradient-to-r from-teal-500 to-emerald-500 text-white rounded-lg shadow-normal dark:shadow-normaldark hover:scale-105 transition transform duration-300">
+                                class="block px-6 py-3 md:px-11 md:py-4 bg-gradient-to-r from-teal-500 to-emerald-500 text-white rounded-md shadow-normal dark:shadow-normaldark hover:scale-105 transition transform duration-300">
                                 نمایش نمونه‌کارها
                             </button>
                         </div>
@@ -504,7 +386,7 @@
                 <div data-aos="zoom-in" class="flex justify-between sm:flex-row flex-col gap-1 gap-y-5 mb-14 md:mb-20">
                     <!-- text title -->
                     <p
-                        class="self-start font-TitleFt -tracking-wider text-3xl md:text-4xl before:content-normal before:size-3 before:md:size-4 before:bg-orange-400  before:dark:bg-orange-800 before:inline-block before:ml-1 before:rounded-sm">
+                        class="self-start font-TitleFt -tracking-wider text-3xl md:text-4xl before:content-normal before:size-3 before:md:size-4 before:bg-blue-400 before:dark:bg-blue-600 before:inline-block before:ml-1 before:rounded-sm">
                         نمونه کار های من</p>
 
 
@@ -513,17 +395,17 @@
                         <div
                             class="flex items-center justify-between gap-x-2 md:h-11 h-9 w-2/3 px-1 bg-white dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark rounded-md">
                             <div class="flex items-center">
-                                <svg class="size-5 md:size-6 stroke-gray-400">
+                                <svg id="searchSubmit"
+                                    class="size-7 md:size-9 stroke-gray-400 active:bg-gray-300/70 dark:active:bg-[rgba(40,67,95,0.93)] rounded-md box-border p-1.5 cursor-pointer">
                                     <use href="#search-ico">
                                 </svg>
-                                <input oninput="searchproje()" onclick="proje()" type="search"
-                                    placeholder="دنبال کدوم پروژه میگردی؟" id="searchInput"
-                                    class="bg-white dark:bg-[rgb(27_52_77)] py-1 pl-2 pr-1 font-BoldFt text-base md:text-lg h-2/3 w-11/12 outline-none placeholder:text-sm md:placeholder:text-base placeholder:font-RegularFt cursor-pointer">
+                                <input onclick="proje()" type="search" placeholder="دنبال کدوم پروژه میگردی؟"
+                                    id="searchInput"
+                                    class="bg-white dark:bg-[rgb(27_52_77)] p-1 pl-0 font-BoldFt text-base md:text-lg h-2/3 w-11/12 outline-none placeholder:text-sm md:placeholder:text-base placeholder:font-RegularFt cursor-pointer">
                             </div>
-                            <p class="text-center text-xs md:text-sm min-w-max" id="itemnumsearch"></p>
                         </div>
                         <!-- selector filter -->
-                        <select id="filter" onclick="proje(); closesearch_filter();"
+                        <select id="filter" onclick="proje()"
                             class="gap-x-2 md:h-11 h-9 p-1.5 md:p-2 w-1/3 text-base md:text-lg bg-white dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark rounded-lg cursor-pointer outline-none">
                             <option value="all">همه موارد</option>
                             <option value="shop">فروشگاهی</option>
@@ -537,314 +419,11 @@
                 <div class="project mx-1 sm:mx-0 flex justify-center gap-x-1 md:gap-x-6 gap-y-12 md:gap-y-16 flex-wrap">
                     <p id="no-search" class="hidden text-lg md:text-xl mt-6 mb-10"></p>
                 </div>
-                <div class="flex justify-center mt-14 mb-8">
-                    <button onclick="closesearch_btn()" id="closesearch_btn" class="text-lg md:text-base hidden">نمایش
-                        همه</button>
-                </div>
             </section>
-
-            <!-- blog  jadid-->
-            <div class="swiper mySwiper mt-8 mb-14">
-                <div class="flex items-center justify-between absolute w-full">
-                    <!-- title and btn show-blog-->
-                    <div data-aos="fade-right" class="flex items-center gap-x-2">
-                        <!-- title -->
-                        <p
-                            class="font-TitleFt text-2xl md:text-3xl before:size-3 before:rounded-full before:ml-px before:bg-blue-400 before:dark:bg-blue-500 before:inline-block">
-                            مقاله های جدید</p>
-
-                        <!-- btn show-blog -->
-                        <a href="#" class="text-sm md:text-base text-gray-800 dark:text-gray-400">نمایش همه</a>
-                    </div>
-                    <div data-aos="fade-left" class="flex items-center mb-2">
-                        <div class="swiper-button-next-slide -ml-3 md:-ml-5 size-8 md:size-10 cursor-pointer">
-                            <svg stroke="currentColor" class="size-full fill-gray-800 dark:fill-gray-200 rotate-180">
-                                <use href="#arrow-left-slider">
-                            </svg>
-                        </div>
-                        <div class="swiper-button-prev-slide size-8 md:size-10 cursor-pointer">
-                            <svg stroke="currentColor" class="size-full fill-gray-800 dark:fill-gray-200">
-                                <use href="#arrow-left-slider">
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <!-- box item all -->
-                <div class="swiper-wrapper mb-10 mt-24">
-
-                    <!-- item -->
-                    <div
-                        class="swiper-slide block w-44 md:w-72 bg-gray-50 dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark p-3 rounded-lg">
-
-                        <!-- image -->
-                        <div class="w-full aspect-video rounded-lg overflow-hidden relative -top-10">
-                            <a href="1" target="_blank" rel="noopener noreferrer">
-                                <img alt="${item.title}"
-                                    class=" size-full  hover:scale-105 transform transition duration-200 delay-75"
-                                    src="./src/picture/project/image/img-1.png">
-                            </a>
-                        </div>
-
-                        <!-- title and description -->
-                        <div class="block -mt-6">
-
-                            <h2
-                                class="font-BoldFt text-base md:text-xl line-clamp-1 mb-1 text-gray-800 dark:text-gray-100 hover:text-opacity-85 hover:dark:text-opacity-85">
-                                <a href="${item.websiteUrl}" target="_blank" rel="noopener noreferrer">
-                                    تایتل این مقله اینجا هست
-                                </a>
-                            </h2>
-                        </div>
-
-                        <!--  time -->
-                        <time class="flex items-center gap-1 mt-6 mb-3 text-gray-500 dark:text-gray-400">
-                            <svg class="size-5 md:size-6 stroke-current stroke-2">
-                                <use href="#time"></use>
-                            </svg>
-                            <span class="text-sm md:text-base">1403/02/05</span>
-                        </time>
-                        <span
-                            class="w-full h-px block bg-neutral-200/70 dark:bg-white/10 shadow-normal dark:shadow-normaldark my-2 rounded-full"></span>
-
-                        <!-- btn view website -->
-                        <a href="1" target="_blank" rel="noopener noreferrer"
-                            class="linkweb dark:hover:text-gray-200 text-base md:text-lg dark:text-blue-400 text-blue-500 hover:text-gray-700 flex items-center w-max mx-auto font-BoldFt transition duration-200 delay-75">
-                            <p>مشاهده مقاله</p>
-                            <svg class="size-6 fill-current">
-                                <use href="#arowleft"></use>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- item -->
-                    <div
-                        class=" swiper-slide block w-44 md:w-72 bg-gray-50 dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark p-3 rounded-lg">
-
-                        <!-- image -->
-                        <div class="w-full aspect-video rounded-lg overflow-hidden relative -top-10">
-                            <a href="1" target="_blank" rel="noopener noreferrer">
-                                <img alt="${item.title}"
-                                    class=" size-full  hover:scale-105 transform transition duration-200 delay-75"
-                                    src="./src/picture/project/image/img-1.png">
-                            </a>
-                        </div>
-
-                        <!-- title and description -->
-                        <div class="block -mt-6">
-
-                            <h2
-                                class="font-BoldFt text-base md:text-xl line-clamp-1 mb-1 text-gray-800 dark:text-gray-100 hover:text-opacity-85 hover:dark:text-opacity-85">
-                                <a href="${item.websiteUrl}" target="_blank" rel="noopener noreferrer">
-                                    تایتل این مقله اینجا هست
-                                </a>
-                            </h2>
-                        </div>
-
-                        <!--  time -->
-                        <time class="flex items-center gap-1 mt-6 mb-3 text-gray-500 dark:text-gray-400">
-                            <svg class="size-5 md:size-6 stroke-current stroke-2">
-                                <use href="#time"></use>
-                            </svg>
-                            <span class="text-sm md:text-base">1403/02/05</span>
-                        </time>
-                        <span
-                            class="w-full h-px block bg-neutral-200/70 dark:bg-white/10 shadow-normal dark:shadow-normaldark my-2 rounded-full"></span>
-
-                        <!-- btn view website -->
-                        <a href="1" target="_blank" rel="noopener noreferrer"
-                            class="linkweb dark:hover:text-gray-200 text-base md:text-lg dark:text-blue-400 text-blue-500 hover:text-gray-700 flex items-center w-max mx-auto font-BoldFt transition duration-200 delay-75">
-                            <p>مشاهده مقاله</p>
-                            <svg class="size-6 fill-current">
-                                <use href="#arowleft"></use>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- item -->
-                    <div
-                        class=" swiper-slide block w-44 md:w-72 bg-gray-50 dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark p-3 rounded-lg">
-
-                        <!-- image -->
-                        <div class="w-full aspect-video rounded-lg overflow-hidden relative -top-10">
-                            <a href="1" target="_blank" rel="noopener noreferrer">
-                                <img alt="${item.title}"
-                                    class=" size-full  hover:scale-105 transform transition duration-200 delay-75"
-                                    src="./src/picture/project/image/img-1.png">
-                            </a>
-                        </div>
-
-                        <!-- title and description -->
-                        <div class="block -mt-6">
-
-                            <h2
-                                class="font-BoldFt text-base md:text-xl line-clamp-1 mb-1 text-gray-800 dark:text-gray-100 hover:text-opacity-85 hover:dark:text-opacity-85">
-                                <a href="${item.websiteUrl}" target="_blank" rel="noopener noreferrer">
-                                    تایتل این مقله اینجا هست
-                                </a>
-                            </h2>
-                        </div>
-
-                        <!--  time -->
-                        <time class="flex items-center gap-1 mt-6 mb-3 text-gray-500 dark:text-gray-400">
-                            <svg class="size-5 md:size-6 stroke-current stroke-2">
-                                <use href="#time"></use>
-                            </svg>
-                            <span class="text-sm md:text-base">1403/02/05</span>
-                        </time>
-                        <span
-                            class="w-full h-px block bg-neutral-200/70 dark:bg-white/10 shadow-normal dark:shadow-normaldark my-2 rounded-full"></span>
-
-                        <!-- btn view website -->
-                        <a href="1" target="_blank" rel="noopener noreferrer"
-                            class="linkweb dark:hover:text-gray-200 text-base md:text-lg dark:text-blue-400 text-blue-500 hover:text-gray-700 flex items-center w-max mx-auto font-BoldFt transition duration-200 delay-75">
-                            <p>مشاهده مقاله</p>
-                            <svg class="size-6 fill-current">
-                                <use href="#arowleft"></use>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- item -->
-                    <div
-                        class=" swiper-slide block w-44 md:w-72 bg-gray-50 dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark p-3 rounded-lg">
-
-                        <!-- image -->
-                        <div class="w-full aspect-video rounded-lg overflow-hidden relative -top-10">
-                            <a href="1" target="_blank" rel="noopener noreferrer">
-                                <img alt="${item.title}"
-                                    class=" size-full  hover:scale-105 transform transition duration-200 delay-75"
-                                    src="./src/picture/project/image/img-1.png">
-                            </a>
-                        </div>
-
-                        <!-- title and description -->
-                        <div class="block -mt-6">
-
-                            <h2
-                                class="font-BoldFt text-base md:text-xl line-clamp-1 mb-1 text-gray-800 dark:text-gray-100 hover:text-opacity-85 hover:dark:text-opacity-85">
-                                <a href="${item.websiteUrl}" target="_blank" rel="noopener noreferrer">
-                                    تایتل این مقله اینجا هست
-                                </a>
-                            </h2>
-                        </div>
-
-                        <!--  time -->
-                        <time class="flex items-center gap-1 mt-6 mb-3 text-gray-500 dark:text-gray-400">
-                            <svg class="size-5 md:size-6 stroke-current stroke-2">
-                                <use href="#time"></use>
-                            </svg>
-                            <span class="text-sm md:text-base">1403/02/05</span>
-                        </time>
-                        <span
-                            class="w-full h-px block bg-neutral-200/70 dark:bg-white/10 shadow-normal dark:shadow-normaldark my-2 rounded-full"></span>
-
-                        <!-- btn view website -->
-                        <a href="1" target="_blank" rel="noopener noreferrer"
-                            class="linkweb dark:hover:text-gray-200 text-base md:text-lg dark:text-blue-400 text-blue-500 hover:text-gray-700 flex items-center w-max mx-auto font-BoldFt transition duration-200 delay-75">
-                            <p>مشاهده مقاله</p>
-                            <svg class="size-6 fill-current">
-                                <use href="#arowleft"></use>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- item -->
-                    <div
-                        class=" swiper-slide block w-44 md:w-72 bg-gray-50 dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark p-3 rounded-lg">
-
-                        <!-- image -->
-                        <div class="w-full aspect-video rounded-lg overflow-hidden relative -top-10">
-                            <a href="1" target="_blank" rel="noopener noreferrer">
-                                <img alt="${item.title}"
-                                    class=" size-full  hover:scale-105 transform transition duration-200 delay-75"
-                                    src="./src/picture/project/image/img-1.png">
-                            </a>
-                        </div>
-
-                        <!-- title and description -->
-                        <div class="block -mt-6">
-
-                            <h2
-                                class="font-BoldFt text-base md:text-xl line-clamp-1 mb-1 text-gray-800 dark:text-gray-100 hover:text-opacity-85 hover:dark:text-opacity-85">
-                                <a href="${item.websiteUrl}" target="_blank" rel="noopener noreferrer">
-                                    تایتل این مقله اینجا هست
-                                </a>
-                            </h2>
-                        </div>
-
-                        <!--  time -->
-                        <time class="flex items-center gap-1 mt-6 mb-3 text-gray-500 dark:text-gray-400">
-                            <svg class="size-5 md:size-6 stroke-current stroke-2">
-                                <use href="#time"></use>
-                            </svg>
-                            <span class="text-sm md:text-base">1403/02/05</span>
-                        </time>
-                        <span
-                            class="w-full h-px block bg-neutral-200/70 dark:bg-white/10 shadow-normal dark:shadow-normaldark my-2 rounded-full"></span>
-
-                        <!-- btn view website -->
-                        <a href="1" target="_blank" rel="noopener noreferrer"
-                            class="linkweb dark:hover:text-gray-200 text-base md:text-lg dark:text-blue-400 text-blue-500 hover:text-gray-700 flex items-center w-max mx-auto font-BoldFt transition duration-200 delay-75">
-                            <p>مشاهده مقاله</p>
-                            <svg class="size-6 fill-current">
-                                <use href="#arowleft"></use>
-                            </svg>
-                        </a>
-                    </div>
-
-                    <!-- item -->
-                    <div
-                        class=" swiper-slide block w-44 md:w-72 bg-gray-50 dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark p-3 rounded-lg">
-
-                        <!-- image -->
-                        <div class="w-full aspect-video rounded-lg overflow-hidden relative -top-10">
-                            <a href="1" target="_blank" rel="noopener noreferrer">
-                                <img alt="${item.title}"
-                                    class=" size-full  hover:scale-105 transform transition duration-200 delay-75"
-                                    src="./src/picture/project/image/img-1.png">
-                            </a>
-                        </div>
-
-                        <!-- title and description -->
-                        <div class="block -mt-6">
-
-                            <h2
-                                class="font-BoldFt text-base md:text-xl line-clamp-1 mb-1 text-gray-800 dark:text-gray-100 hover:text-opacity-85 hover:dark:text-opacity-85">
-                                <a href="${item.websiteUrl}" target="_blank" rel="noopener noreferrer">
-                                    تایتل این مقله اینجا هست
-                                </a>
-                            </h2>
-                        </div>
-
-                        <!--  time -->
-                        <time class="flex items-center gap-1 mt-6 mb-3 text-gray-500 dark:text-gray-400">
-                            <svg class="size-5 md:size-6 stroke-current stroke-2">
-                                <use href="#time"></use>
-                            </svg>
-                            <span class="text-sm md:text-base">1403/02/05</span>
-                        </time>
-                        <span
-                            class="w-full h-px block bg-neutral-200/70 dark:bg-white/10 shadow-normal dark:shadow-normaldark my-2 rounded-full"></span>
-
-                        <!-- btn view website -->
-                        <a href="1" target="_blank" rel="noopener noreferrer"
-                            class="linkweb dark:hover:text-gray-200 text-base md:text-lg dark:text-blue-400 text-blue-500 hover:text-gray-700 flex items-center w-max mx-auto font-BoldFt transition duration-200 delay-75">
-                            <p>مشاهده مقاله</p>
-                            <svg class="size-6 fill-current">
-                                <use href="#arowleft"></use>
-                            </svg>
-                        </a>
-                    </div>
-
-                </div>
-
-                <!-- circel -->
-                <div class="swiper-pagination"></div>
-            </div>
         </main>
 
         <footer
-            class="bg-gray-50 px-4 pt-10 pb-20 md:pb-3 shadow-normal dark:bg-[rgb(27_52_77)] dark:shadow-normaldark">
+            class="bg-gray-50 px-4 pt-5 md:pt-10 pb-20 md:pb-3 shadow-normal dark:bg-[rgb(27_52_77)] dark:shadow-normaldark">
             <div class="flex flex-col mx-1">
 
                 <!-- about and ertebat -->
@@ -861,26 +440,26 @@
                         </p>
                     </div>
                     <div class="flex items-center justify-center gap-x-4 text-blue-600 dark:text-blue-200 stroke-[1.5]">
-                        <a href="#"
-                            class="size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
+                        <a
+                            class="telegram-link size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
                             <svg class="size-6">
                                 <use href="#telg">
                             </svg>
                         </a>
-                        <a href="#"
-                            class="size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
+                        <a
+                            class="instagram-link size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
                             <svg class="size-6">
                                 <use href="#instag">
                             </svg>
                         </a>
-                        <a href="#"
-                            class="size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
+                        <a
+                            class="phone-link size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
                             <svg class="size-6">
                                 <use href="#phone">
                             </svg>
                         </a>
-                        <a href="#"
-                            class="size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
+                        <a
+                            class="email-link size-full bg-blue-100 dark:bg-blue-300/30 transition duration-300 hover:opacity-70 p-2 rounded-md ">
                             <svg class="size-6">
                                 <use href="#email">
                             </svg>
@@ -897,199 +476,154 @@
                     محتوا و محصولات سایت غیر مجاز
                     و بدون رضایت ماست.</p>
         </footer>
+    </div>
 
-        <!-- other -->
-        <div>
-            <!-- tolbal top site -->
-            <div id="tolbar" class="bg-orange-400 dark:bg-orange-800 fixed z-50 top-0 right-0 h-1 w-0"></div>
+    <!-- other -->
+    <div>
+        <div id="bgcolortar" style="display: none;"
+            class="size-full bg-black/40 fixed inset-0 m-auto z-[99] cursor-no-drop"></div>
+        <!-- tolbal top site -->
+        <div id="tolbar" class="bg-blue-400 dark:bg-blue-600 fixed z-50 top-0 right-0 h-1 w-0"></div>
 
-            <!-- btn scrol top -->
-            <div id="topsite" onclick="window.scrollTo({top: 0});"
-                class="md:flex hidden fixed right-3 -bottom-20 z-20 items-center size-11 md:size-16 bg-white dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark rounded-full cursor-pointer duration-300 group">
+        <!-- btn scrol top -->
+        <div id="topsite" onclick="window.scrollTo({top: 0});" style="bottom: -999px;"
+            class="md:flex hidden fixed right-3 -bottom-20 z-20 items-center size-11 md:size-16 bg-white dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark rounded-full cursor-pointer duration-300 group">
 
-                <!-- Icon -->
-                <svg class="absolute left-0 right-0 mx-auto size-5 md:size-7 animate-bounce">
-                    <use href="#top-sit"></use>
-                </svg>
+            <!-- Icon -->
+            <svg class="absolute left-0 right-0 mx-auto size-5 md:size-7 animate-bounce">
+                <use href="#top-sit"></use>
+            </svg>
 
-                <!-- Tooltip -->
+            <!-- Tooltip -->
+            <span
+                class="w-max absolute opacity-0 lg:group-hover:opacity-100 transition duration-300 bg-gray-100 text-gray-700 dark:bg-[rgb(27_52_77)] dark:text-gray-100 text-sm py-2 px-3 rounded-lg shadow-normal dark:shadow-normaldark -top-12 left-1/2 transform -translate-x-1/2 pointer-events-none">
+                بروبالا
                 <span
-                    class="w-max absolute opacity-0 lg:group-hover:opacity-100 transition duration-300 bg-gray-100 text-gray-700 dark:bg-[rgb(27_52_77)] dark:text-gray-100 text-sm py-2 px-3 rounded-lg shadow-normal dark:shadow-normaldark -top-12 left-1/2 transform -translate-x-1/2 pointer-events-none">
-                    بروبالا
-                    <span
-                        class="absolute size-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-gray-100 dark:border-t-gray-700 -bottom-[6px] left-1/2 transform transition -translate-x-1/2">
-                    </span>
+                    class="absolute size-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-gray-100 dark:border-t-gray-700 -bottom-[6px] left-1/2 transform transition -translate-x-1/2">
                 </span>
+            </span>
 
+        </div>
+
+        <!-- modal zabans item proje -->
+        <div id="languageModal"
+            class="bg-white/80 dark:bg-[rgba(27,52,77,0.70)] h-fit backdrop-blur-sm rounded-lg shadow-lg p-6 w-80 md:w-96 fixed inset-0 m-auto z-[100] scale-0 transition transform">
+            <!-- عنوان -->
+            <h3 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">زبان‌های استفاده‌شده
+            </h3>
+
+            <!-- لیست زبان‌ها -->
+            <div id="languageList" class="list-disc pl-5 text-gray-600 dark:text-gray-400 mb-6"></div>
+
+            <!-- دکمه بستن اصلی -->
+            <button onclick="closeLanguageModal()"
+                class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">
+                بستن
+            </button>
+        </div>
+
+        <!-- copu adress url web item proje -->
+        <div id="copyFeedback" style="right: -999px;"
+            class="fixed top-2 transition-all transform duration-300 bg-green-500 text-white text-base md:text-lg px-5 py-1 md:py-2 md:px-10 rounded shadow-lg z-50">
+            آدرس کپی شد.
+        </div>
+
+        <!-- box qrcode web item proje link -->
+        <div id="qrcode"
+            class="fixed inset-0 m-auto scale-0 size-fit z-[100] transition transform bg-white/80 dark:bg-[rgba(27,52,77,0.70)] backdrop-blur-sm shadow-normal dark:shadow-normaldark rounded-lg p-3 pt-1 md:p-4 md:pt-2">
+            <!-- header (icon close and text top) -->
+            <div class="flex items-center justify-between mb-1">
+                <!-- icon close box QrCode -->
+                <svg id="closeqrcode" class="size-8 md:size-11 cursor-pointer transition duration-200 hover:opacity-80">
+                    <use href="#close">
+                </svg>
+                <!-- text box QrCode -->
+                <p class="text-sm md:text-base">اسکنش کن</p>
             </div>
-
-            <!-- modal zabans item proje -->
-            <div id="languageModal"
-                class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                <div id="boxlanguageModal"
-                    class="bg-white dark:bg-[rgb(27_52_77)] rounded-lg shadow-lg p-6 w-80 md:w-96 relative">
-                    <!-- عنوان -->
-                    <h3 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">زبان‌های استفاده‌شده
-                    </h3>
-
-                    <!-- لیست زبان‌ها -->
-                    <div id="languageList" class="list-disc pl-5 text-gray-600 dark:text-gray-400 mb-6"></div>
-
-                    <!-- دکمه بستن اصلی -->
-                    <button onclick="closeLanguageModal()"
-                        class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors">
-                        بستن
-                    </button>
+            <!-- footer (img QrCode and loader img) -->
+            <div class="size-64 md:size-96 rounded overflow-hidden">
+                <!-- image -->
+                <img id="imgqr" class="hidden size-full" alt="تصویر پیش نمایشی از سایت">
+                <!-- loding -->
+                <div id="loader"
+                    class="flex items-center justify-center animate-pulse size-full bg-gray-300 dark:bg-[rgb(27_52_77)]">
+                    <svg class="size-14 md:size-20 text-gray-200 dark:text-gray-600">
+                        <use href="#loaderimg"></use>
+                    </svg>
                 </div>
             </div>
+        </div>
 
-            <!-- copu adress url web item proje -->
-            <div id="copyFeedback"
-                class="hidden fixed top-2 right-2 bg-green-500 text-white text-base md:text-lg px-5 py-1 md:py-2 md:px-10 rounded shadow-lg z-50">
-                آدرس کپی شد.
+        <!-- box modal 1 (sabt proje)-->
+        <div id="project-modal"
+            class="fixed inset-0 m-auto w-10/12 sm:w-96 h-fit z-[100] flex flex-col items-center bg-white/80 dark:bg-[rgba(27,52,77,0.70)] backdrop-blur-sm shadow-normal dark:shadow-normaldark p-2 md:p-3 rounded-lg scale-0 transition transform">
+            <div id="close-modal" class="flex items-center justify-between w-full float-right mb-3 md:mb-4">
+                <svg class="size-8 md:size-11 cursor-pointer transition duration-200 hover:opacity-80">
+                    <use href="#close">
+                </svg>
+                <p class="text-sm md:text-base">راه های ارتباطی</p>
             </div>
-
-            <!-- box QrCode web item proje link -->
-            <div id="boxqrcode"
-                class="hidden fixed inset-0 z-50 overflow-auto flex items-center justify-center bg-black/50">
-                <!-- box QrCode -->
-                <div id="qrcode"
-                    class="scale-0 transition transform duration-200 bg-white dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark rounded-lg p-3 pt-1 md:p-4 md:pt-2">
-                    <!-- header (icon close and text top) -->
-                    <div class="flex items-center justify-between mb-1">
-                        <!-- icon close box QrCode -->
-                        <svg id="closeqrcode"
-                            class="size-8 md:size-11 cursor-pointer transition duration-200 hover:opacity-80">
-                            <use href="#close">
+            <!-- text title -->
+            <p class="text-lg md:text-2xl font-BoldFt text-center mb-3 md:mb-5">
+                از انتخاب شما سپاسگزاریم! برای شروع، از راه‌های زیر با ما در ارتباط باشید.
+            </p>
+            <!-- link all sochal media -->
+            <div class="flex flex-col gap-4 pb-6 w-11/12 text-base md:text-lg stroke-[1.8px]">
+                <!-- phone -->
+                <a
+                    class="phone-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-green-600 text-gray-200 hover:scale-95 transition transformion duration-300">
+                    <div class="flex items-stretch gap-x-1">
+                        <svg class="size-6">
+                            <use href="#phone"></use>
                         </svg>
-                        <!-- text box QrCode -->
-                        <p class="text-sm md:text-base">اسکنش کن</p>
+                        <p>تماس</p>
                     </div>
-                    <!-- footer (img QrCode and loader img) -->
-                    <div class="size-64 md:size-96 rounded overflow-hidden">
-                        <!-- image -->
-                        <img id="imgqr" class="hidden size-full" alt="تصویر پیش نمایشی از سایت">
-                        <!-- loding -->
-                        <div id="loader"
-                            class="flex items-center justify-center animate-pulse size-full bg-gray-300 dark:bg-[rgb(27_52_77)]">
-                            <svg class="size-14 md:size-20 text-gray-200 dark:text-gray-600">
-                                <use href="#loaderimg"></use>
-                            </svg>
-                        </div>
-                    </div>
+                    <svg class="size-6 rotate-90">
+                        <use href="#arrow-bottom"></use>
+                    </svg>
+                </a>
 
-                </div>
-            </div>
-
-            <!-- box modal 1 (sabt proje)-->
-            <div id="project-modal"
-                class="hidden fixed inset-0 z-50 overflow-auto flex justify-center items-center bg-black/50">
-
-                <!-- box modal 1 -->
-                <div
-                    class="w-10/12 sm:w-96 flex flex-col items-center bg-white dark:bg-[rgb(27_52_77)] shadow-normal dark:shadow-normaldark p-2 md:p-3 rounded-lg scale-0 duration-300">
-                    <div id="close-modal" class="flex items-center justify-between w-full float-right mb-3 md:mb-4">
-                        <svg class="size-8 md:size-11 cursor-pointer transition duration-200 hover:opacity-80">
-                            <use href="#close">
+                <!-- email -->
+                <a
+                    class="email-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-yellow-600 text-gray-200 hover:scale-95 transition transformion duration-300">
+                    <div class="flex items-stretch gap-x-1">
+                        <svg class="size-6">
+                            <use href="#email"></use>
                         </svg>
-                        <p class="text-sm md:text-base">راه های ارتباطی</p>
+                        <p>ایمیل</p>
                     </div>
-                    <!-- text title -->
-                    <p class="text-lg md:text-2xl font-BoldFt text-center mb-3 md:mb-5">
-                        از انتخاب شما سپاسگزاریم! برای شروع، از راه‌های زیر با ما در ارتباط باشید.
-                    </p>
-                    <!-- link all sochal media -->
-                    <div class="flex flex-col gap-4 pb-6 w-11/12 text-base md:text-lg stroke-[1.8px]">
-                        <!-- phone -->
-                        <a
-                            class="phone-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-green-600 text-gray-200 hover:scale-95 transition transformion duration-300">
-                            <div class="flex items-stretch gap-x-1">
-                                <svg class="size-6">
-                                    <use href="#phone"></use>
-                                </svg>
-                                <p>تماس</p>
-                            </div>
-                            <svg class="size-6 rotate-90">
-                                <use href="#arrow-bottom"></use>
-                            </svg>
-                        </a>
+                    <svg class="size-6 rotate-90">
+                        <use href="#arrow-bottom"></use>
+                    </svg>
+                </a>
 
-                        <!-- email -->
-                        <a
-                            class="email-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-yellow-600 text-gray-200 hover:scale-95 transition transformion duration-300">
-                            <div class="flex items-stretch gap-x-1">
-                                <svg class="size-6">
-                                    <use href="#email"></use>
-                                </svg>
-                                <p>ایمیل</p>
-                            </div>
-                            <svg class="size-6 rotate-90">
-                                <use href="#arrow-bottom"></use>
-                            </svg>
-                        </a>
-
-                        <!-- telegram -->
-                        <a target="_blank" rel="noopener noreferrer"
-                            class="telegram-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-blue-600 text-gray-200 hover:scale-95 transition transformion duration-300">
-                            <div class="flex items-stretch gap-x-1 stroke-[1.5px]">
-                                <svg class="size-6">
-                                    <use href="#telg"></use>
-                                </svg>
-                                <p>تلگرام</p>
-                            </div>
-                            <svg class="size-6 rotate-90">
-                                <use href="#arrow-bottom"></use>
-                            </svg>
-                        </a>
-
-                        <!-- instagram -->
-                        <a target="_blank" rel="noopener noreferrer"
-                            class="instagram-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-pink-600 text-gray-200 hover:scale-95 transition transformion duration-300">
-                            <div class="flex items-stretch gap-x-1">
-                                <svg class="size-6">
-                                    <use href="#instag"></use>
-                                </svg>
-                                <p>اینستاگرام</p>
-                            </div>
-                            <svg class="size-6 rotate-90">
-                                <use href="#arrow-bottom"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- box modal 2 (hoshdar is modal 1)-->
-            <div id="exit-confirmation"
-                class="hidden fixed inset-0 -top-[999px] z-50 overflow-auto flex justify-center items-center duration-300">
-                <!-- box modal 2  -->
-                <div class="px-3 py-5 bg-white dark:bg-[rgb(20,41,62)] rounded-lg shadow-normal dark:shadow-normaldark">
-                    <!-- icon -->
-                    <div class="flex items-center gap-x-1 mb-2">
-                        <svg class="size-8 md:size-10 stroke-[1.4px] stroke-gray-400 dark:stroke-gray-200">
-                            <use href="#error">
+                <!-- telegram -->
+                <a target="_blank" rel="noopener noreferrer"
+                    class="telegram-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-blue-600 text-gray-200 hover:scale-95 transition transformion duration-300">
+                    <div class="flex items-stretch gap-x-1 stroke-[1.5px]">
+                        <svg class="size-6">
+                            <use href="#telg"></use>
                         </svg>
-                        <!-- text title -->
-                        <p class="font-BoldFt text-base text-center md:text-lg text-gray-500 dark:text-gray-400">
-                            آیا مطمئن
-                            هستید
-                            که
-                            نمی‌خواهید پروژه‌تان را ارسال کنید؟</p>
+                        <p>تلگرام</p>
                     </div>
+                    <svg class="size-6 rotate-90">
+                        <use href="#arrow-bottom"></use>
+                    </svg>
+                </a>
 
-                    <!-- btn yes & no -->
-                    <div class="flex justify-end flex-wrap gap-2">
-                        <!-- btn no -->
-                        <button id="cancel-exit"
-                            class="text-base md:text-lg text-gray-900 bg-green-500 px-4 py-1 rounded-lg transition duration-200 hover:opacity-85">
-                            نه</button>
-
-                        <!-- btn yes -->
-                        <button id="confirm-exit"
-                            class="text-base md:text-lg text-gray-100 bg-red-500 px-4 py-1 rounded-lg transition duration-200 hover:opacity-85">
-                            بله</button>
+                <!-- instagram -->
+                <a target="_blank" rel="noopener noreferrer"
+                    class="instagram-link flex justify-between items-center gap-1 py-2 px-3 rounded-lg bg-pink-600 text-gray-200 hover:scale-95 transition transformion duration-300">
+                    <div class="flex items-stretch gap-x-1">
+                        <svg class="size-6">
+                            <use href="#instag"></use>
+                        </svg>
+                        <p>اینستاگرام</p>
                     </div>
-                </div>
+                    <svg class="size-6 rotate-90">
+                        <use href="#arrow-bottom"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
